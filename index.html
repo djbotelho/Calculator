@@ -8,32 +8,32 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" name="display" id="result">
+        <input type="number" name="display" id="result">
         <div class="buttons">
-            <input type="button" value="%">
-            <input type="button" value="CE">
-            <input type="button" value="C" onclick="clearValue()">
-            <input type="button" value="DEL">
-            <input type="button" value="1/x">
-            <input type="button" value="x^2">
-            <input type="button" value="√x">
-            <input type="button" value="/" id="operator">
+            <input type="button" value="%" onclick="current()">
+            <input type="button" value="CE" onclick="clearDisplay()">
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="DEL" onclick="clearValue()">
+            <input type="button" value="1/x" onclick ="inverse()">
+            <input type="button" value="x^2" onclick="quadrado()">
+            <input type="button" value="√x" onclick="sqrt()">
+            <input type="button" value="/" id="operator" onclick="operate('/')">
             <input type="button" value="7" onclick="displayValue(7)">
             <input type="button" value="8" onclick="displayValue(8)">
             <input type="button" value="9" onclick="displayValue(9)">
-            <input type="button" value="X" id="operator">
+            <input type="button" value="X" id="operator" onclick="operate('*')">
             <input type="button" value="4" onclick="displayValue(4)">
             <input type="button" value="5" onclick="displayValue(5)">
             <input type="button" value="6" onclick="displayValue(6)">
-            <input type="button" value="-" id="operator">
+            <input type="button" value="-" id="operator" onclick="operate('-')">
             <input type="button" value="1" onclick="displayValue(1)">
             <input type="button" value="2" onclick="displayValue(2)">
             <input type="button" value="3" onclick="displayValue(3)">
-            <input type="button" value="+" id="operator" onclick="sum()">
+            <input type="button" value="+" id="operator" onclick="operate('+')">
             <input type="button" value="+/-">
-            <input type="button" value="0" onclick="displayValue(7)">
+            <input type="button" value="0" onclick="displayValue(0)">
             <input type="button" value=".">
-            <input type="button" value="=" id="equal">
+            <input type="button" value="=" id="equal" onclick="calcular()">
            
         </div>
 
