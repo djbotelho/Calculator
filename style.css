@@ -1,10 +1,11 @@
 .calculator {
-    background: orange;
+    background: rgb(65, 63, 60);
     margin: 0 auto;
     width: 450px;
     display: flex;
     flex-direction: column;
     border-radius: 35px;
+    padding-bottom: 10px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -23,10 +24,11 @@ input[type="number"] {
     width: 70%;
     padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 35px;
     background-color: #e0e0e0;
     font-size: 2em;
     text-align: right;
+    height: 45px;
     
     margin: 0 auto;
     margin-top:40px;
@@ -34,16 +36,16 @@ input[type="number"] {
 
 
 .buttons {
-   width: 80%;
-   margin: 0 auto; 
-   display: flex;
-   flex-wrap: wrap;
-   gap: 5px;
-   padding: 30px;
-   
-  
-   
-}
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 30px;
+    justify-content: center;
+  }
+
+
 input[type="button"] {
    width: 23%;
     height: 85px;
@@ -51,31 +53,43 @@ input[type="button"] {
     padding: 20px;
     font-size: 1.5em;
     border: none;
-    border-radius: 55px;
-    background-color: #4caf50;
+    
+    background-color: #c2831d;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     
 }
 
 input[type="button"]:hover {
-    background-color: #45a049;
+    background-color: #8d6018;
     transform: scale(1.05);
 }
 
 input[type="button"]:active {
-    background-color: #3e8e41;
+    background-color: #8d6018;
     transform: scale(0.95);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 
 #operator {
-    background-color: #447144;
+    background-color: #6b796b;
 }
 
 #equal {
-    background-color: #324232;
+    background-color: #183b88;
+    border-bottom-right-radius: 35px;
+}
 
+#maisMenos {
+    border-bottom-left-radius: 35px;;
+}
+
+#del {
+    border-top-right-radius: 35px;
+}
+
+#percent {
+    border-top-left-radius: 35px;
 }

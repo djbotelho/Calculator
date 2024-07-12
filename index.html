@@ -10,10 +10,10 @@
     <div class="calculator">
         <input type="number" name="display" id="result">
         <div class="buttons">
-            <input type="button" value="%" onclick="current()">
+            <input type="button" id="percent" value="%" onclick="current()">
             <input type="button" value="CE" onclick="clearDisplay()">
             <input type="button" value="C" onclick="clearDisplay()">
-            <input type="button" value="DEL" onclick="clearValue()">
+            <input type="button" id = "del" value="DEL" onclick="clearValue()">
             <input type="button" value="1/x" onclick ="inverse()">
             <input type="button" value="x^2" onclick="quadrado()">
             <input type="button" value="√x" onclick="sqrt()">
@@ -30,9 +30,9 @@
             <input type="button" value="2" onclick="displayValue(2)">
             <input type="button" value="3" onclick="displayValue(3)">
             <input type="button" value="+" id="operator" onclick="operate('+')">
-            <input type="button" value="+/-">
+            <input type="button" id="maisMenos" value="+/-">
             <input type="button" value="0" onclick="displayValue(0)">
-            <input type="button" value=".">
+            <input type="button" value="." onclick="decimal()">
             <input type="button" value="=" id="equal" onclick="calcular()">
            
         </div>
