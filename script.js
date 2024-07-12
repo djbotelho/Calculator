@@ -91,8 +91,8 @@ function changeSign() {
     return;
   }
 
-  newInput = display.value = newInput;
-  currentInput = newInput.toString();
+ currentInput = `- ${currentInput}`;
+ display.value= currentInput;
 }
 
 function inverse() {
