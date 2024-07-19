@@ -1,11 +1,19 @@
+body {
+    background: #d85b5b;
+}
+
+
 .calculator {
-    background: rgb(65, 63, 60);
+    background: rgba(65, 63, 60);
     margin: 0 auto;
+    margin-top: 40px;
     width: 450px;
     display: flex;
     flex-direction: column;
     border-radius: 35px;
     padding-bottom: 10px;
+    border: 1px ridge  black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -20,7 +28,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input[type="number"] {
+input[type="text"] {
     width: 70%;
     padding: 15px;
     border: none;
@@ -43,6 +51,7 @@ input[type="number"] {
     gap: 5px;
     padding: 30px;
     justify-content: center;
+    
   }
 
 
@@ -53,7 +62,7 @@ input[type="button"] {
     padding: 20px;
     font-size: 1.5em;
     border: none;
-    
+    border: 1px groove black;
     background-color: #c2831d;
     color: white;
     cursor: pointer;
